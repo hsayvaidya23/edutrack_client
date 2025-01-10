@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Class } from '../types/class';
 
 
-const API_URL = `${import.meta.env.VITE_SITE}/api/classes`;
+const API_URL = `${import.meta.env.VITE_SITE}api/classes`;
 
 export const getClasses = async (token: string): Promise<{ value: string; label: string }[]> => {
   const response = await axios.get<{ _id: string; className: string }[]>(API_URL, {
@@ -19,7 +19,7 @@ export const getClasses = async (token: string): Promise<{ value: string; label:
 
 export const getClassDetails = async (classId: string, token: string): Promise<any> => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_SITE}/api/classes/${classId}`, {
+    const response = await fetch(`${import.meta.env.VITE_SITE}api/classes/${classId}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },

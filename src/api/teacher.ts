@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { Teacher } from '../types/teacher';
 
-const API_URL = `${import.meta.env.VITE_SITE}/api/teachers`;
+const API_URL = `${import.meta.env.VITE_SITE}api/teachers`;
 
 // Get all teachers
 export const getTeachers = async (token: string): Promise<Teacher[]> => {

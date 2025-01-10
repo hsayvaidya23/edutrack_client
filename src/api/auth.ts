@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { AuthResponse, User } from '../types/user';
 
-const API_URL = `${import.meta.env.VITE_SITE}/api/auth`;
+const API_URL = `${import.meta.env.VITE_SITE}api/auth`;
 
 // Login user
 export const login = async (email: string, password: string, role: User['role']): Promise<AuthResponse> => {

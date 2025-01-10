@@ -14,6 +14,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://edutrackserver-production.up.railway.app',
+        
         changeOrigin: true,
       },
     },

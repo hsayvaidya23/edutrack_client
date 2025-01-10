@@ -33,7 +33,7 @@ const columns: Column[] = [
 
 // API functions
 const getClasses = async (authToken: string): Promise<Class[]> => {
-    const response = await fetch(`${import.meta.env.VITE_SITE}/api/classes`, {
+    const response = await fetch(`${import.meta.env.VITE_SITE}api/classes`, {
         headers: {
             'Authorization': `Bearer ${authToken}`
         }
