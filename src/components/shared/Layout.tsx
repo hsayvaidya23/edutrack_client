@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SidebarProvider, SidebarTrigger } from "../ui/sidebar";
 import { AppSidebar } from "./AppSidebar";

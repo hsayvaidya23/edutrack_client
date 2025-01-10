@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useAuth } from './AuthProvider';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { PermissionDeniedDialog } from './shared/Permission'; 

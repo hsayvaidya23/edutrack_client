@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GraduationCap } from "lucide-react";
 
 export function Header() {

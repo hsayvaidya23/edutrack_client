@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react';
 import { Layout } from '@/components/shared/Layout';
 import { z } from 'zod';

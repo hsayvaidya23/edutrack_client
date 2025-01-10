@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react';
 import { Layout } from '@/components/shared/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

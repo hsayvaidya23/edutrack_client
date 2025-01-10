@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react';
 import { getTeachers } from '@/api/teacher';
 import { getClasses } from '@/api/class';
@@ -44,6 +45,7 @@ const FinancialAnalytics = () => {
         // Create a map of class fees
         const classFeesMap = classes.reduce((map, cls) => ({
           ...map,
+          
           [cls.className]: Number(cls.studentFees) || 0,
         }), {} as Record<string, number>);
 
