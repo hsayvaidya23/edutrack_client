@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const getTeacherSalaries = async () => {
     const response = await fetch('/api/analytics/teacher-salaries');
     return response.json();

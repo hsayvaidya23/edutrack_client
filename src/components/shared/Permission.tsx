@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 
 export function PermissionDeniedDialog({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {

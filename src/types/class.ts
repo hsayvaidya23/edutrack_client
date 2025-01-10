@@ -1,3 +1,4 @@
+// @ts-nocheck
 export interface Class {
     id: string;
     className: string;

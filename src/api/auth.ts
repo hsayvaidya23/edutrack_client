@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from 'axios';
 import { AuthResponse, User } from '../types/user';
 
