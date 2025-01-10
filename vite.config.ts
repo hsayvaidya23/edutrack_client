@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000' || 'https://edutrackserver-production.up.railway.app',
+        target: 'https://edutrackserver-production.up.railway.app',
         changeOrigin: true,
       },
     },
