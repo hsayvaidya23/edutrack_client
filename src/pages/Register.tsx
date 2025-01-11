@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { useState } from "react";
 import { useAuth } from "../components/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -101,9 +101,9 @@ const Register = () => {
                 </form>
                 <p className="text-center">
                     Already have an account?{" "}
-                    <a href="/" className="text-blue-500 hover:underline">
+                    <Link to="/login" className="text-blue-500 hover:underline">
                         Login here
-                    </a>
+                    </Link>
                 </p>
             </div>
         </div>

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { useState } from "react";
 import { useAuth } from "../components/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -36,11 +36,11 @@ const Login = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
         <div className="flex items-center gap-2 mb-10 justify-center">
-                    <div className="bg-blue-600 p-2 rounded-lg">
-                        <GraduationCap className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="font-bold text-lg">EduTrack</span>
-                </div>
+          <div className="bg-blue-600 p-2 rounded-lg">
+            <GraduationCap className="h-6 w-6 text-white" />
+          </div>
+          <span className="font-bold text-lg">EduTrack</span>
+        </div>
         <h1 className="text-2xl font-bold text-center">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -89,9 +89,9 @@ const Login = () => {
         </form>
         <p className="text-center">
           Don't have an account?{" "}
-          <a href="/signup" className="text-blue-500 hover:underline">
-            Register here
-          </a>
+          <Link to="/login" className="text-blue-500 hover:underline">
+            Login here
+          </Link>
         </p>
       </div>
     </div>
