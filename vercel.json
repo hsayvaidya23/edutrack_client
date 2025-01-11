@@ -1,8 +1,15 @@
 {
     "routes": [
       {
+        "src": "/api/(.*)",
+        "dest": "https://edutrackserver-production.up.railway.app/api/$1",
+        "headers": {
+          "Access-Control-Allow-Origin": "*"
+        }
+      },
+      {
         "src": "/(.*)",
-        "dest": "/",
+        "dest": "/index.html",
         "status": 200
       }
     ]
