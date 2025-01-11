@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: '/', // Adjust if your app is hosted at a subpath
   plugins: [react()],
   resolve: {
     alias: {
